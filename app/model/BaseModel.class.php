@@ -18,6 +18,6 @@ class BaseModel {
    * @return PDO
    */
   protected function get_pdo() {
-    return require dirname(__FILE__) . '/../../inc/pdo.php';
+    return require dirname(__FILE__) . '/../connector/pdo.php';
   }
 }

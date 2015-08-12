@@ -9,10 +9,10 @@
  */
 use NoahBuscher\Macaw\Macaw;
 
-Macaw::options(BASE . '/user/(:any)', 'BaseController@on_options');
+Macaw::options(BASE . '/auth/(:any)', 'BaseController@on_options');
 
-Macaw::get(BASE . '/user/', 'UserController@get_info');
+Macaw::get(BASE . '/auth/', 'UserController@get_info');
 
-Macaw::put(BASE . '/user/(:any)', 'UserController@login');
+Macaw::put(BASE . '/auth/(:any)', 'UserController@login');
 
-Macaw::delete(BASE . '/user/(:any)', 'UserController@logout');
+Macaw::delete(BASE . '/auth/(:any)', 'UserController@logout');
