@@ -19,4 +19,5 @@ session_start();
 require '../router/routes.php';
 require '../router/user.php';
 require '../router/book.php';
+require '../router/template.php';
 Macaw::dispatch();
